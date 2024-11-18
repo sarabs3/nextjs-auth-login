@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "node prisma/seed.js"
+    "seed": "node prisma/seed.js",
+    "prisma": "prisma generate",
+    "buildapp": "npm run build && npm run prisma"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
